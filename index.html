@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+        content="DSE GFM subgroup.">
+  <meta name="keywords" content="DSE GFM">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.3, maxmum-scale=1.0, minimum-scale=0.3">
   <style>
     body {
       display: flex;
@@ -32,268 +30,458 @@
         width: 48%;
         padding: 5px;
       }
-    .imageo{
-      margin-top: 20px;
-      width: 200px;
-      height: 200px;
-      border-radius:200px;
-    }
-    /* 清除图像容器后的浮动 */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+.imageo{
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius:200px;
+}
+/* 清除图像容器后的浮动 */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   </style>
-  
-  <title>OracleLLM</title>
+  <title>DSE Graph Foundation Model Subgroup</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- (A) LOAD CSS & JS -->
+  <link rel="stylesheet" href="collapse-list.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="collapse-list.js"></script>
 
 
-  <section class="section">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Introduction</h2>
-          <div class="content has-text-justified">
-            <p>
-              Greetings! We are a tiny research group from the <a href="https://dse.cse.msu.edu/">Data Science and Engineering (DSE) Laboratory</a> at Michigan State University.
-               We typically focus on the Graph Foundation Models (GFM). Our perspectives are as follows: (1) LLM can be one choice for building GFM, but not yet. (2) GFM requires the guidance from theoretical principles. This is exciting as it connects the advanced progress from theory to unbeatable empirical success (<a href="https://arxiv.org/abs/2402.02216">Check details here</a>). (3) There is an initial spark for Neural scaling law on graphs. We need more high-quality data, a better model backbone, and a better pre-training task design toward scaling. (4) the most important thing for GFM is the correct application scenario. Beyond traditional graph topics in the data mining domain, we are also interested in the potential of the utilization of GFM in other domains. Check more details on our current progress including papers, talks, open-source repository, and reading list.
-            </p>
-  
-          </div>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">DSE Graph Foundation Model Subgroup</h1>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Papers</h2>
-          <div class="content has-text-justified">
-  
-            <h4 class="title is-4">Prospective</h4>
-            <ul type='disc'> 
-              <li>
-                <a href="https://arxiv.org/abs/2402.02216">Graph Foundation Models</a><br> Haitao Mao*, Zhikai Chen*, Wenzhuo Tang, Jianan Zhao, Yao Ma, Tong Zhao, Neil Shah, Michael Galkin, Jiliang Tang;<br><b>ICML 2024 Spotlight</b>
-                <details >
-                    <summary>Details</summary>
-                    <ul type='disc'>
-                      <li>We propose a “graph vocabulary” perspective aiming to find the basic transferable units underlying graphs that encode the invariance of graphs</li>
-                      <li>We illustrate theoretical guidance for the graph vocabulary design</li>
-                      <li>We emphasize the practical techniques for building GFM following the Neural Scaling Law</li>
-                    </ul>
-                  </details>
-                  </li>
-            </ul>
-  
-            <h4 class="title is-4">GFMs</h4>
-            <ul type='disc'> 
-              <li>
-                <a href="">A Pure Transformer Pretraining Framework on Text-attributed Graphs.</a><br> Yu Song, Haitao Mao, Jiachen Xiao, Jingzhe Liu, Zhikai Chen, Wei Jin, Carl Yang, Jiliang Tang, Hui Liu;<br><b>preprint, 2024</b>
-              </li>
-              <li>
-                <a href="https://arxiv.org/pdf/2406.01899">Cross-Domain Graph Data Scaling: A Showcase with Diffusion Models.</a><br> Wenzhuo Tang, Haitao Mao, Danial Dervovic, Ivan Brugere, Saumitra Mishra, Yuying Xie, Jiliang Tang.;<br><b>preprint, 2024</b>
-              </li>
-              <li>
-                <a href="https://arxiv.org/pdf/2402.07738">Universal link predictor by in-context learning.</a><br> Kaiwen Dong, Haitao Mao, Zhichun Guo, Nitesh Chewla;<br><b>preprint, 2024</b>
-              </li>
-            </ul>
-  
-            
-            <h4 class="title is-4">Principles</h4>
-            <ul type='disc'>
-              <li>
-                  <a href="">Do Neural Scaling Laws exist on Graph Self-Supervised Learning</a><br> Qian Ma, Haitao Mao, Zhehua Zhang, Chunlin Feng, Jingzhe Liu, Yu Song, Yao Ma;<br><b>preprint, 2024</b>
-                </li>  
-              <li>
-                  <a href="https://arxiv.org/abs/2402.02054">Neural Scaling Laws on Graphs</a><br> Jingzhe Liu, Haitao Mao, Zhikai Chen, Tong Zhao, Neil Shah, Jiliang Tang;<br><b>preprint, 2024</b>
-                  <details>
-                    <summary>Details</summary>
-                    <ul type='disc'>
-                      <li>We examine the mode and data scaling laws on graphs.</li>
-                      <li>For model scaling, we observe some graph-specific phenomena and identify the potential reasons.</li>
-                      <li>For data scaling, we propose that the total edge number is a better metric, and extend the data scaling law to node classification and link prediction tasks.</li>
-                    </ul>
-                  </details>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Greetings! We are a tiny research group from the <a href="https://dse.cse.msu.edu/">Data Science and Engineering (DSE) Laboratory</a> at Michigan State University.
+             We typically focus on the Graph Foundation Models (GFM). Our perspectives are as follows: (1) LLM can be one choice for building GFM, but not yet. (2) GFM requires the guidance from theoretical principles. This is exciting as it connects the advanced progress from theory to unbeatable empirical success (<a href="https://arxiv.org/abs/2402.02216">Check details here</a>). (3) There is an initial spark for Neural scaling law on graphs. We need more high-quality data, a better model backbone, and a better pre-training task design toward scaling. (4) the most important thing for GFM is the correct application scenario. Beyond traditional graph topics in the data mining domain, we are also interested in the potential of the utilization of GFM in other domains. Check more details on our current progress including papers, talks, open-source repository, and reading list.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Papers</h2>
+        <div class="content has-text-justified">
+
+          <h4 class="title is-4">Prospective</h4>
+          <ul type='disc'> 
+            <li>
+              <a href="https://arxiv.org/abs/2402.02216">Graph Foundation Models</a><br> Haitao Mao*, Zhikai Chen*, Wenzhuo Tang, Jianan Zhao, Yao Ma, Tong Zhao, Neil Shah, Michael Galkin, Jiliang Tang;<br><b>ICML 2024 Spotlight</b>
+              <details >
+                  <summary>Details</summary>
+                  <ul type='disc'>
+                    <li>We propose a “graph vocabulary” perspective aiming to find the basic transferable units underlying graphs that encode the invariance of graphs</li>
+                    <li>We illustrate theoretical guidance for the graph vocabulary design</li>
+                    <li>We emphasize the practical techniques for building GFM following the Neural Scaling Law</li>
+                  </ul>
+                </details>
                 </li>
-                <li>
-                  <a href="ttps://arxiv.org/abs/2402.02212">A Data Generation Perspective to the Mechanism of In-Context Learning</a><br> Haitao Mao, Guangliang Liu, Yao Ma, Rongrong Wang, Jiliang Tang;<br><b>preprint, 2024</b>
+          </ul>
+
+          <h4 class="title is-4">GFMs</h4>
+          <ul type='disc'> 
+            <li>
+              <a href="">A Pure Transformer Pretraining Framework on Text-attributed Graphs.</a><br> Yu Song, Haitao Mao, Jiachen Xiao, Jingzhe Liu, Zhikai Chen, Wei Jin, Carl Yang, Jiliang Tang, Hui Liu;<br><b>preprint, 2024</b>
+            </li>
+            <li>
+              <a href="https://arxiv.org/pdf/2406.01899">Cross-Domain Graph Data Scaling: A Showcase with Diffusion Models.</a><br> Wenzhuo Tang, Haitao Mao, Danial Dervovic, Ivan Brugere, Saumitra Mishra, Yuying Xie, Jiliang Tang.;<br><b>preprint, 2024</b>
+            </li>
+            <li>
+              <a href="https://arxiv.org/pdf/2402.07738">Universal link predictor by in-context learning.</a><br> Kaiwen Dong, Haitao Mao, Zhichun Guo, Nitesh Chewla;<br><b>preprint, 2024</b>
+            </li>
+          </ul>
+
+          
+          <h4 class="title is-4">Principles</h4>
+          <ul type='disc'>
+            <li>
+                <a href="">Do Neural Scaling Laws exist on Graph Self-Supervised Learning</a><br> Qian Ma, Haitao Mao, Zhehua Zhang, Chunlin Feng, Jingzhe Liu, Yu Song, Yao Ma;<br><b>preprint, 2024</b>
+              </li>  
+            <li>
+                <a href="https://arxiv.org/abs/2402.02054">Neural Scaling Laws on Graphs</a><br> Jingzhe Liu, Haitao Mao, Zhikai Chen, Tong Zhao, Neil Shah, Jiliang Tang;<br><b>preprint, 2024</b>
                 <details>
-                    <summary>Details</summary>
+                  <summary>Details</summary>
+                  <ul type='disc'>
+                    <li>We examine the mode and data scaling laws on graphs.</li>
+                    <li>For model scaling, we observe some graph-specific phenomena and identify the potential reasons.</li>
+                    <li>For data scaling, we propose that the total edge number is a better metric, and extend the data scaling law to node classification and link prediction tasks.</li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <a href="ttps://arxiv.org/abs/2402.02212">A Data Generation Perspective to the Mechanism of In-Context Learning</a><br> Haitao Mao, Guangliang Liu, Yao Ma, Rongrong Wang, Jiliang Tang;<br><b>preprint, 2024</b>
+              <details>
+                  <summary>Details</summary>
+                  <ul type='disc'>
+                    <li>We study the underlying mechanism of ICL from a data generation perspective.</li>
+                    <li>we rigorously adopt the terms of skill learning and skill recognition. The difference between them is skill learning can learn new data generation functions from in-context data. </li>
+                    <li>We illustrate two analysis frameworks, i.e., Bayesian inference statistical framework and function learning statistical framework.</li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <a href="https://arxiv.org/pdf/2310.00793">Revisiting Link Prediction: A data perspective</a><br> Haitao Mao, Juanhui Li, Harry Shomer, Bingheng Li, Wenqi Fan, Yao Ma, Tong Zhao, Neil Shah, Jiliang Tang;<br><b>ICLR, 2024</b>
+              <details >
+                  <summary>Details</summary>
+                  <ul type='disc'>
+                    <li>We recognize three fundamental factors critical to link prediction: local structural proximity, global structural proximity and feature proximity.</li>
+                    <li>We unearth the incompatibility between feature and structural proximity.</li>
+                    <li>We collect diverse link prediction datasets and provide new guidance for model architecture design. </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2306.01323">Demystifying Structural Disparity in Graph Neural Networks: Can One Size Fit All?</a><br>Haitao Mao, Zhikai Chen, Wei Jin, Haoyu Han, Yao Ma, Tong Zhao, Neil Shah, Jiliang Tang; <b>NeurIPS, 2023</b>
+              <details >
+                  <summary>Details</summary>
+                  <ul type='disc'>
+                    <li>We recognize two fundamental factors critical to node classification: homophily and heterophily.</li>
+                    <li>GNNs can only work on either the homophily pattern or the heterophily one, but not both.</li>
+                  </ul>
+                </details>
+              </li>
+
+            </ul>
+           <h4 class="title is-4">LLMs on Graphs</h4>
+          <ul type='disc'> 
+              <li>
+                <a href="https://arxiv.org/abs/2310.04668">Label-free Node Classification on Graphs with Large Language Models (LLMS)</a><br> Zhikai Chen, Haitao Mao, Hongzhi Wen, Haoyu Han, Wei Jin, Haiyang Zhang, Hui Liu, Jiliang Tang;<br> <b>ICLR, 2024</b>
+                <details>
+                    <summary> Details </summary>
                     <ul type='disc'>
-                      <li>We study the underlying mechanism of ICL from a data generation perspective.</li>
-                      <li>we rigorously adopt the terms of skill learning and skill recognition. The difference between them is skill learning can learn new data generation functions from in-context data. </li>
-                      <li>We illustrate two analysis frameworks, i.e., Bayesian inference statistical framework and function learning statistical framework.</li>
+                          <li> In recent years, there have been remarkable advancements in node classification achieved by Graph Neural Networks (GNNs). However, they necessitate abundant high-quality labels to ensure promising performance. In contrast, Large Language Models (LLMs) exhibit impressive zero-shot proficiency on text-attributed graphs. Yet, they face challenges in efficiently processing structural data and suffer from high inference costs. In light of these observations, this work introduces a label-free node classification on graphs with LLMs pipeline, LLM-GNN. It amalgamates the strengths of both GNNs and LLMs while mitigating their limitations. </li>
                     </ul>
-                  </details>
-                </li>
-                <li>
-                  <a href="https://arxiv.org/pdf/2310.00793">Revisiting Link Prediction: A data perspective</a><br> Haitao Mao, Juanhui Li, Harry Shomer, Bingheng Li, Wenqi Fan, Yao Ma, Tong Zhao, Neil Shah, Jiliang Tang;<br><b>ICLR, 2024</b>
+                </details>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2307.03393v3">Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs</a><br>Zhikai Chen, Haitao Mao, Hang Li, Wei Jin, Hongzhi Wen, Xiaochi Wei, Shuaiqiang Wang, Dawei Yin, Wenqi Fan, Hui Liu, Jiliang Tang;<br><b>SIGKDD Explorations and NeurIPS GLFrontiers 2023</b> [<a href="https://github.com/CurryTang/Graph-LLM">codes</a>]
                 <details >
-                    <summary>Details</summary>
+                    <summary> Details </summary>
                     <ul type='disc'>
-                      <li>We recognize three fundamental factors critical to link prediction: local structural proximity, global structural proximity and feature proximity.</li>
-                      <li>We unearth the incompatibility between feature and structural proximity.</li>
-                      <li>We collect diverse link prediction datasets and provide new guidance for model architecture design. </li>
+                        <li> In this paper, we study how LLMs can be used to empower graph machine learning problems. For node classification tasks, we propose two pipelines: <strong>LLMs-as-Enhancers</strong> and <strong>LLMs-as-Predictors</strong>. <strong>LLMs-as-Enhancers</strong> adopts LLMs to enhance the text features, which improves GNNs' performance. <strong>LLMs-as-Predictors</strong> directly adopts LLMs for inference, and present feature information together with inductive biases by natural languages. <strong>LLMs-as-Predictors</strong> achieves promising zero-shot performance. </li>
                     </ul>
-                  </details>
-                </li>
-                <li>
-                  <a href="https://arxiv.org/abs/2306.01323">Demystifying Structural Disparity in Graph Neural Networks: Can One Size Fit All?</a><br>Haitao Mao, Zhikai Chen, Wei Jin, Haoyu Han, Yao Ma, Tong Zhao, Neil Shah, Jiliang Tang; <b>NeurIPS, 2023</b>
-                <details >
-                    <summary>Details</summary>
-                    <ul type='disc'>
-                      <li>We recognize two fundamental factors critical to node classification: homophily and heterophily.</li>
-                      <li>GNNs can only work on either the homophily pattern or the heterophily one, but not both.</li>
-                    </ul>
-                  </details>
-                </li>
-  
-              </ul>
-             <h4 class="title is-4">LLMs on Graphs</h4>
-            <ul type='disc'> 
-                <li>
-                  <a href="https://arxiv.org/abs/2310.04668">Label-free Node Classification on Graphs with Large Language Models (LLMS)</a><br> Zhikai Chen, Haitao Mao, Hongzhi Wen, Haoyu Han, Wei Jin, Haiyang Zhang, Hui Liu, Jiliang Tang;<br> <b>ICLR, 2024</b>
-                  <details>
-                      <summary> Details </summary>
-                      <ul type='disc'>
-                            <li> In recent years, there have been remarkable advancements in node classification achieved by Graph Neural Networks (GNNs). However, they necessitate abundant high-quality labels to ensure promising performance. In contrast, Large Language Models (LLMs) exhibit impressive zero-shot proficiency on text-attributed graphs. Yet, they face challenges in efficiently processing structural data and suffer from high inference costs. In light of these observations, this work introduces a label-free node classification on graphs with LLMs pipeline, LLM-GNN. It amalgamates the strengths of both GNNs and LLMs while mitigating their limitations. </li>
-                      </ul>
-                  </details>
-                </li>
-                <li>
-                  <a href="https://arxiv.org/abs/2307.03393v3">Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs</a><br>Zhikai Chen, Haitao Mao, Hang Li, Wei Jin, Hongzhi Wen, Xiaochi Wei, Shuaiqiang Wang, Dawei Yin, Wenqi Fan, Hui Liu, Jiliang Tang;<br><b>SIGKDD Explorations and NeurIPS GLFrontiers 2023</b> [<a href="https://github.com/CurryTang/Graph-LLM">codes</a>]
-                  <details >
-                      <summary> Details </summary>
-                      <ul type='disc'>
-                          <li> In this paper, we study how LLMs can be used to empower graph machine learning problems. For node classification tasks, we propose two pipelines: <strong>LLMs-as-Enhancers</strong> and <strong>LLMs-as-Predictors</strong>. <strong>LLMs-as-Enhancers</strong> adopts LLMs to enhance the text features, which improves GNNs' performance. <strong>LLMs-as-Predictors</strong> directly adopts LLMs for inference, and present feature information together with inductive biases by natural languages. <strong>LLMs-as-Predictors</strong> achieves promising zero-shot performance. </li>
-                      </ul>
-                  </details>
-                </li>
-                <li>
-                  <a href="https://arxiv.org/abs/2307.03393v3">Graph Machine Learning in the Era of Large Language Models (LLMs).</a><br>Wenqi Fan, Shijie Wang, Jiani Huang, Zhikai Chen, Yu Song, Wenzhuo Tang, Haitao Mao, Hui Liu, Xiaorui Liu, Dawei Yin, Qing Li;<br><b>Arxiv 2024</b>
-                </li>
-            </ul>
-            <h4 class="title is-4">Benchmarks</h4>
-            <ul type='disc'> 
+                </details>
+              </li>
               <li>
-                  <a href="https://arxiv.org/pdf/2306.10453/">Evaluating Graph Neural Networks for Link Prediction: Current Pitfalls and New Benchmarking</a><br> Juanhui Li, Harry Shomer, Haitao Mao, Shenglai Zeng, Yao Ma, Neil Shah, Jiliang Tang, Dawei Yin;<br> <b>NeurIPS Dataset Track, 2023</b>
-                </li>
+                <a href="https://arxiv.org/abs/2307.03393v3">Graph Machine Learning in the Era of Large Language Models (LLMs).</a><br>Wenqi Fan, Shijie Wang, Jiani Huang, Zhikai Chen, Yu Song, Wenzhuo Tang, Haitao Mao, Hui Liu, Xiaorui Liu, Dawei Yin, Qing Li;<br><b>Arxiv 2024</b>
+              </li>
+          </ul>
+          <h4 class="title is-4">Benchmarks</h4>
+          <ul type='disc'> 
+            <li>
+                <a href="https://arxiv.org/pdf/2306.10453/">Evaluating Graph Neural Networks for Link Prediction: Current Pitfalls and New Benchmarking</a><br> Juanhui Li, Harry Shomer, Haitao Mao, Shenglai Zeng, Yao Ma, Neil Shah, Jiliang Tang, Dawei Yin;<br> <b>NeurIPS Dataset Track, 2023</b>
+              </li>
+            <li>
+                <a href="">Text-space graph foundation models: a comprehensive benchmark and new insights.</a><br> Zhikai Chen, Haitao Mao, Jingzhe Liu, Yu Song, Bingheng Li, Wei Jin, Bahare Fatemi, Anton Tsitsulin, Bryan Perozzi, Hui Liu, Jiliang Tang;<br> <b>Preprint 2024</b>
+              </li>
+          </ul>
+          <h4 class="title is-4">Others</h4>
+          <ul type='disc'> 
+            <li>
+                <a href="https://arxiv.org/pdf/2112.00955.pdf">Source Free Graph Unsupervised Domain Adaptation</a><br> Haitao Mao, Lun Du, Yujia Zheng, Qiang Fu, Zelin Li, Xu Chen, Shi Han, Dongmei Zhang;<br> <b>WSDM, 2024</b>
+              </li>
               <li>
-                  <a href="">Text-space graph foundation models: a comprehensive benchmark and new insights.</a><br> Zhikai Chen, Haitao Mao, Jingzhe Liu, Yu Song, Bingheng Li, Wei Jin, Bahare Fatemi, Anton Tsitsulin, Bryan Perozzi, Hui Liu, Jiliang Tang;<br> <b>Preprint 2024</b>
-                </li>
-            </ul>
-            <h4 class="title is-4">Others</h4>
-            <ul type='disc'> 
+                <a href="https://arxiv.org/pdf/2310.11009.pdf">LPFormer: An Adaptive Graph Transformer for Link Prediction</a><br> Harry Shomer, Yao Ma, Haitao Mao, Juanhui Li, Bo Wu, Jiliang Tang;<br><b>preprint, 2023</b>
+              </li>
+          </ul>
+          <h4 class="title is-4">Paper Lists</h4>
+          <ul type='disc'> 
+            <li>
+                <a href="https://github.com/CurryTang/Towards-Graph-Foundation-Models-New-perspective-">Towards graph foundation models: from the PRINCIPLE perspective</a><br> A curated list of papers related to the principles for graph foundation models
+              </li>
               <li>
-                  <a href="https://arxiv.org/pdf/2112.00955.pdf">Source Free Graph Unsupervised Domain Adaptation</a><br> Haitao Mao, Lun Du, Yujia Zheng, Qiang Fu, Zelin Li, Xu Chen, Shi Han, Dongmei Zhang;<br> <b>WSDM, 2024</b>
-                </li>
-                <li>
-                  <a href="https://arxiv.org/pdf/2310.11009.pdf">LPFormer: An Adaptive Graph Transformer for Link Prediction</a><br> Harry Shomer, Yao Ma, Haitao Mao, Juanhui Li, Bo Wu, Jiliang Tang;<br><b>preprint, 2023</b>
-                </li>
-            </ul>
-            <h4 class="title is-4">Paper Lists</h4>
-            <ul type='disc'> 
-              <li>
-                  <a href="https://github.com/CurryTang/Towards-Graph-Foundation-Models-New-perspective-">Towards graph foundation models: from the PRINCIPLE perspective</a><br> A curated list of papers related to the principles for graph foundation models
-                </li>
-                <li>
-                  <a href="https://github.com/CurryTang/Towards-graph-foundation-models">Towards graph foundation models: from the METHOD perspective</a><br> A curated list of papers related to the practical techniques for graph foundation models
-                </li>
-            </ul>
-          </div>
+                <a href="https://github.com/CurryTang/Towards-graph-foundation-models">Towards graph foundation models: from the METHOD perspective</a><br> A curated list of papers related to the practical techniques for graph foundation models
+              </li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Talks</h2>
+        <div class="content has-text-justified">
 
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">People</h2>
-          <div class="content has-text-justified">
-            <div class="avatars">
-              <div class="column">
-                <center>
-                  
-                <img class="imageo" src="./static/images/Mao.png"   align="middle">
-                <br>
-                <font size="3" ><a style="color:inherit;" href="https://haitaomao.github.io/publications/">Haitao Mao</a></font>
-                </center>
-              </div>
-  
-              <div class="column">
-                <center>
-                  
-                <img class="imageo" src="./static/images/Chen.png"   align="middle">
-                <br>
-                <font size="3" ><a style="color:inherit;" href="https://currytang.github.io/">Zhikai Chen</a></font>
-                </center>
-              </div>
-  
          
-              <div class="column">
-                <center>
-                <img class="imageo" src="./static/images/Tang.png"   align="middle">
-                <br>
-                <font size="3" ><a style="color:inherit;" href="https://wenzhuotang.github.io/">Wenzhuo Tang</a></font>
-                </center>
-              </div>
-              
-              <div class="column">
-                <center>
-                  
-                <img class="imageo" src="./static/images/Song.png"   align="middle">
-                <br>
-                <font size="3" ><a style="color:inherit;" href="https://github.com/SongYYYY">Yu Song</a></font>
-                </center>
-              </div>
   
-              <div class="column">
-                <center>
-                  
-                <img class="imageo" src="./static/images/Liu.png"   align="middle">
-                <br>
-                <font size="3" ><a style="color:inherit;" href="https://liu-jingzhe.github.io/personalpage/">Jingzhe Liu</a></font>
-                </center>
-              </div>
-  
-      
-              <div class="column">
-                <center>
-                <img class="imageo" src="./static/images/Dai.png"   align="middle">
-                <br>
-                <font size="3" ><a style="color:inherit;" href="https://ddigimon.github.io/">Xinnan Dai</a></font>
-                </center>
-              </div>  
+          <h3 class="title is-4"><a href="https://drive.google.com/file/d/14x2XyQ0f9jhvSrEtbO5hqkGUIkZ0be6S/view?usp=sharing">Learning on graph: What is next?</a> Feb. 2024</h3>
+          <div class="row">
+            <div class="column2">
+              <img src="./static/images/GFM_PPT_1.png" align="middle" border="4">
+            </div>
+            <div class="column2">
+              <img src="./static/images/GFM_PPT_2.png"  align="middle" border="4">
             </div>
           </div>
+
+          <h3 class="title is-4"><a href="https://drive.google.com/file/d/1iqb4ZB5DO4g9oNx2LdQjS_mcnGMJkaYs/view?usp=sharing">From LLM4Graph to Principle GFM</a> Feb. 2024</h3>
+          <div class="row">
+            <div class="column2">
+              <img src="./static/images/LOG_PPT_1.png" align="middle" border="4">
+            </div>
+            <div class="column2">
+              <img src="./static/images/LOG_PPT_2.png"  align="middle" border="4">
+            </div>
+          </div>
+
+          <h3 class="title is-4"><a href="https://drive.google.com/file/d/1vE8zKRXMQtN0zwxl9vUPy0t3z8YpAy_O/view?usp=sharing">When do Graph Neural Networks
+work and when not?</a> Oct. 2023</h3>
+          <div class="row">
+            <div class="column2">
+              <img src="./static/images/LP_PPT_1.png" align="middle" border="4">
+            </div>
+            <div class="column2">
+              <img src="./static/images/LP_PPT_2.png"  align="middle" border="4">
+            </div>
+          </div> 
+
+          <h3 class="title is-4"><a href="https://drive.google.com/file/d/1JtTK0VNoRwQMzE0Gqg1ZykjxQZY4Xoo4/view?usp=sharing">Exploring the Potential of Large Language
+Models (LLMs) in Learning on Graphs</a> & <a href="https://drive.google.com/file/d/1nCG_XFLK7ue7R0XAJbkjkA_p_cLe0HIX/view?usp=sharing">Label-free Node Classification on
+Graphs with Large Language Models (LLMs) </a> </h3>
+          <div class="row">
+            <div class="column2">
+              <img src="./static/images/LLM_PPT_1.png" align="middle" border="4">
+            </div>
+            <div class="column2">
+              <img src="./static/images/LLM_PPT_2.png" align="middle" border="4">
+            </div>
+          </div> 
+          
         </div>
       </div>
     </div>
-  </section> 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Workshop</h2>
+        <div class="content has-text-justified">
+
+         
+  
+          <h3 class="title is-4"><a href="https://www.www24gfm.com/">The WebConf Workshop on Graph Foundation Models</a> May. 2024</h3>
+          <img src="./static/images/GFM2024WorkShop.png" align="middle">  
+          </div>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">People</h2>
+        <div class="content has-text-justified">
+          <div class="avatars">
+            <div class="column">
+              <center>
+                
+              <img class="imageo" src="./static/images/Mao.png"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://haitaomao.github.io/publications/">Haitao Mao</a></font>
+              </center>
+            </div>
+
+            <div class="column">
+              <center>
+                
+              <img class="imageo" src="./static/images/Chen.png"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://currytang.github.io/">Zhikai Chen</a></font>
+              </center>
+            </div>
+
+       
+            <div class="column">
+              <center>
+              <img class="imageo" src="./static/images/Tang.png"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://wenzhuotang.github.io/">Wenzhuo Tang</a></font>
+              </center>
+            </div>
+            
+            <div class="column">
+              <center>
+                
+              <img class="imageo" src="./static/images/Song.png"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://github.com/SongYYYY">Yu Song</a></font>
+              </center>
+            </div>
+
+            <div class="column">
+              <center>
+                
+              <img class="imageo" src="./static/images/Liu.png"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://liu-jingzhe.github.io/personalpage/">Jingzhe Liu</a></font>
+              </center>
+            </div>
+
+    
+            <div class="column">
+              <center>
+              <img class="imageo" src="./static/images/Dai.png"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://ddigimon.github.io/">Xinnan Dai</a></font>
+              </center>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Acknowledgement</h2>
+        <div class="content has-text-justified">
+          <p>We sincerely thank the people below for their guidance and collaboration in our research work. </p>
+          <p> Advisory: <b><a style="color:inherit;" href="http://nshah.net/">Neil Shah</a></font></b>, <b><a style="color:inherit;" href="https://tzhao.io/">Tong Zhao</a></b>, <b><a style="color:inherit;" href="https://yaoma24.github.io/">Yao Ma</a></b>, <b><a style="color:inherit;" href="https://www.cs.emory.edu/~wjin30/">Wei Jin</a></b>, <b><a style="color:inherit;" href="https://www.linkedin.com/in/michael-galkin-80b71294">Michael Galkin</a></b>, <b><a style="color:inherit;" href="https://jian-tang.com/">Jian Tang</a></b>, <b><a style="color:inherit;" href="https://www.cs.ox.ac.uk/people/michael.bronstein/">Michael Bronstein</a></b>, <b><a style="color:inherit;" href="https://graphdeeplearning.github.io/authors/xavier-bresson/">Xavier Bresson</a></b>,
+          <b><a style="color:inherit;" href="https://bhooi.github.io/">Bryan Hooi</a></b>,<b><a style="color:inherit;" href="https://www.amazon.science/author/haiyang-zhang">Haiyang Zhang</a></b>,<b><a style="color:inherit;" href="https://xta.ng/">Xiafeng Tang</a></b>,<b><a style="color:inherit;" href="http://chen-luo.com/">Chen Luo</a></b>.
+          </p>
+
+          <p>
+            Students: <b><a style="color:inherit;" href="https://www.cse.msu.edu/~shomerha/">Harry Shomer</a></b>, <b><a style="color:inherit;" href="https://juanhui28.github.io/">Juanhui Li</a></b>, <b>Guangliang Liu</b>,<b><a style="color:inherit;" href="https://andyjzhao.github.io/">Jianan Zhao</a></b>, <b><a style="color:inherit;" href="https://xiaoxinhe.github.io/">Xiaoxin He</a></b>, <b><a style="color:inherit;" href="https://q-hwang.github.io/">Qian Huang</a></b>,
+            <b><a style="color:inherit;" href="https://mila.quebec/en/person/xinyu-yuan/">Xinyu Yuan</a></b>, <b><a style="color:inherit;" href="https://kiddozhu.github.io/">Zhaocheng Zhu</a></b>.
+          </p>
+        
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+  
+  
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Sponsors</h2>
+        <div class="content has-text-justified">
+          <div class="sponsors">
+            <div class="column">
+              <img src="./static/images/JPMorgan.png" align="middle">
+            </div>
+            <div class="column">
+              <img src="./static/images/Snap.png"  align="middle">
+            </div>
+            <div class="column">
+              <img src="./static/images/Baidu.png" align="middle">
+            </div>
+            <div class="column">
+              <img src="./static/images/Microsoft.png" align="middle">
+            </div>
+            <div class="column">
+              <img src="./static/images/Cisco.png" align="middle">
+            </div>
+            <div class="column">
+              <img src="./static/images/Amazon.png" align="middle">
+            </div>
+          </div>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+
 
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
@@ -315,5 +503,6 @@
   </div>
 </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
