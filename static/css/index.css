@@ -155,3 +155,23 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+.column {
+  float: none !important;
+  width: 100%;
+}
+
+.avatars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.avatars > .column {
+  flex-basis: 200px;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+}
