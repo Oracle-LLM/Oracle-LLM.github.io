@@ -169,14 +169,24 @@
           <h4 class="title is-4">LLM-as-a-Judge</h4>
           <ul type='disc'> 
             <li>
-                <a href="https://arxiv.org/pdf/2405.04086">Optimizing Language Model's Reasoning Abilities with Weak Supervision</a><br>Yongqi Tong, Sizhe Wang, Dawei Li, Yifan Wang, Simeng Han, Zi Lin, Chengsong Huang, Jiaxin Huang, Jingbo Shang;<br><b>Arxiv Preprint</b>
-                <details>
-                  <summary> Details </summary>
-                  <ul type='disc'>
-                        <li> While Large Language Models (LLMs) have demonstrated proficiency in handling complex reasoning, much of the past work has depended on extensively annotated datasets by human experts. However, this reliance on fully-supervised annotations poses scalability challenges, particularly as models and data requirements grow. In this work, we begin by analyzing the limitations of existing data-efficient reinforcement learning (RL) methods in LLMs' reasoning enhancement. To mitigate this, we introduce self-reinforcement, an efficient weak-to-strong approach to optimize language models' reasoning abilities utilizing both annotated and unlabeled samples. Our method enhances the quality of synthetic feedback by fully harnessing annotated seed data and introducing a novel self-filtering mechanism to remove invalid pairs. We also present PuzzleBen, a weakly supervised benchmark for reasoning that comprises 25,147 complex questions, answers, and human-generated rationales across various domains, such as brainteasers, puzzles, riddles, parajumbles, and critical reasoning tasks. Our experiments underscore the significance of PuzzleBen, as well as the effectiveness of our methodology as a promising direction in future endeavors. </li>
-                  </ul>
-              </details>
-              </li>      
+              <a href="https://arxiv.org/pdf/2405.04086">Optimizing Language Model's Reasoning Abilities with Weak Supervision</a><br>Yongqi Tong, Sizhe Wang, Dawei Li, Yifan Wang, Simeng Han, Zi Lin, Chengsong Huang, Jiaxin Huang, Jingbo Shang;<br><b>Arxiv Preprint</b>
+              <details>
+                <summary> Details </summary>
+                <ul type='disc'>
+                      <li> While Large Language Models (LLMs) have demonstrated proficiency in handling complex reasoning, much of the past work has depended on extensively annotated datasets by human experts. However, this reliance on fully-supervised annotations poses scalability challenges, particularly as models and data requirements grow. In this work, we begin by analyzing the limitations of existing data-efficient reinforcement learning (RL) methods in LLMs' reasoning enhancement. To mitigate this, we introduce self-reinforcement, an efficient weak-to-strong approach to optimize language models' reasoning abilities utilizing both annotated and unlabeled samples. Our method enhances the quality of synthetic feedback by fully harnessing annotated seed data and introducing a novel self-filtering mechanism to remove invalid pairs. We also present PuzzleBen, a weakly supervised benchmark for reasoning that comprises 25,147 complex questions, answers, and human-generated rationales across various domains, such as brainteasers, puzzles, riddles, parajumbles, and critical reasoning tasks. Our experiments underscore the significance of PuzzleBen, as well as the effectiveness of our methodology as a promising direction in future endeavors. </li>
+                </ul>
+            </details>
+            </li>
+            
+            <li>
+              <a href="https://arxiv.org/pdf/2407.04842">MJ-BENCH: Is Your Multimodal Reward Model Really a Good Judge for Text-to-Image Generation?</a><br>Zhaorun Chen, Yichao Du, Zichen Wen, Yiyang Zhou, Chenhang Cui, Zhenzhen Weng, Haoqin Tu, Chaoqi Wang, Zhengwei Tong, Qinglan Huang, Canyu Chen, Qinghao Ye, Zhihong Zhu, Yuqing Zhang, Jiawei Zhou, Zhuokai Zhao, Rafael Rafailov, Chelsea Finn, Huaxiu Yao;<br><b>Arxiv Preprint</b>
+              <details>
+                <summary> Details </summary>
+                <ul type='disc'>
+                      <li> While text-to-image models like DALLE-3 and Stable Diffusion are rapidly proliferating, they often encounter challenges such as hallucination, bias, and the production of unsafe, low-quality output. To effectively address these issues, it is crucial to align these models with desired behaviors based on feedback from a multimodal judge. Despite their significance, current multimodal judges frequently undergo inadequate evaluation of their capabilities and limitations, potentially leading to misalignment and unsafe fine-tuning outcomes. To address this issue, we introduce MJ-Bench, a novel benchmark which incorporates a comprehensive preference dataset to evaluate multimodal judges in providing feedback for image generation models across four key perspectives: alignment, safety, image quality, and bias. Specifically, we evaluate a large variety of multimodal judges including smaller-sized CLIP-based scoring models, open-source VLMs (e.g. LLaVA family), and close-source VLMs (e.g. GPT-4o, Claude 3) on each decomposed subcategory of our preference dataset. Experiments reveal that close-source VLMs generally provide better feedback, with GPT-4o outperforming other judges in average. Compared with open-source VLMs, smaller-sized scoring models can provide better feedback regarding text-image alignment and image quality, while VLMs provide more accurate feedback regarding safety and generation bias due to their stronger reasoning capabilities. Further studies in feedback scale reveal that VLM judges can generally provide more accurate and stable feedback in natural language (Likert-scale) than numerical scales. Notably, human evaluations on end-to-end fine-tuned models using separate feedback from these multimodal judges provide similar conclusions, further confirming the effectiveness of MJ-Bench. </li>
+                </ul>
+            </details>
+          </li>  
            </ul>
 
 
@@ -238,6 +248,15 @@
               <img class="imageo" src="./static/images/hengyuan.png"   align="middle">
               <br>
               <font size="3" ><a style="color:inherit;" href="https://rattlesnakey.github.io/">Hengyuan Zhang</a></font>
+              </center>
+            </div>
+
+            <div class="column"></div>
+              <center>
+                
+              <img class="imageo" src="./static/images/canyu.jpg"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://canyuchen.com/">Canyu Chen</a></font>
               </center>
             </div>
           </div>
