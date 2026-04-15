@@ -282,6 +282,48 @@
               </details>
             </li>
 
+            <li>
+              <a href="https://aclanthology.org/2025.acl-long.1540/">Deliberate reasoning in language models as structure-aware planning with an accurate world model</a><br>
+              Siheng Xiong, Ali Payani, Yuan Yang, Faramarz Fekri;<br>
+              <b>ACL 2025</b>
+              <details>
+                <summary> Details </summary>
+                <ul type="disc">
+                  <li>
+                    This paper proposes Structure-aware Planning with an Accurate World Model (SWAP) to improve multi-step reasoning in language models. Instead of relying only on free-form natural language chain-of-thought, SWAP introduces entailment graphs to represent dependencies between reasoning steps and support symbolic verification of intermediate conclusions. It uses a policy model to expand the graph, a world model to predict structural updates, and a discriminator to rank candidate updates. The method also adds diversity-based sampling and contrastive ranking to improve exploration and candidate selection. Experiments on math, logic, and coding benchmarks show consistent gains over baseline reasoning methods.
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <a href="https://openreview.net/forum?id=PlkzZhqBCd">Enhancing language model reasoning with structured multi-level modeling</a><br>
+              Siheng Xiong, Ali Payani, Faramarz Fekri;<br>
+              <b>ICLR 2026</b>
+              <details>
+                <summary> Details </summary>
+                <ul type="disc">
+                  <li>
+                    This paper studies inference-time scaling for reasoning and argues that single-policy long chain-of-thought often suffers from long-horizon planning failures, especially in smaller language models. To address this, it proposes Multi-Level Reasoning (MLR), which decomposes reasoning into a two-level process: a high-level planner generates structured step descriptors, and a low-level executor produces detailed reasoning conditioned on those descriptors. The model alternates between planning and execution, allowing dynamic adjustment during long reasoning trajectories. To train this framework more effectively, the paper introduces iterative Step-DPO with Twisted Sequential Monte Carlo (TSMC), providing stepwise supervision without needing a separate process reward model. Results on math, science, and logic benchmarks show improved stability, robustness, and accuracy under the same reduced data budget.
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <a href="https://arxiv.org/abs/2601.20539">PathWise: Planning through World Model for Automated Heuristic Design via Self-Evolving LLMs</a><br>
+              Oguzhan Gungordu, Siheng Xiong, Faramarz Fekri;<br>
+              <b>arXiv 2026</b>
+              <details>
+                <summary> Details </summary>
+                <ul type="disc">
+                  <li>
+                    This paper focuses on automated heuristic design for combinatorial optimization problems using large language models. It proposes PathWise, a multi-agent reasoning framework that casts heuristic generation as a sequential decision process over an entailment graph serving as structured memory for the search trajectory. A policy agent selects evolutionary actions, a world model agent rolls out candidate heuristics under those actions, and critic agents generate reflections that summarize lessons from previous steps. By moving beyond static prompt templates and fixed evolutionary rules, the framework enables more state-aware planning and reduces redundant exploration. Experiments across multiple optimization tasks show faster convergence to stronger heuristics, better generalization across language model backbones, and improved scalability to larger instances.
+                  </li>
+                </ul>
+              </details>
+            </li>
+
           </ul>
   
           <h4 class="title is-4">Paper Lists</h4>
@@ -370,6 +412,15 @@
               <img class="imageo" src="./static/images/Haolun.jpg"   align="middle">
               <br>
               <font size="3" ><a style="color:inherit;" href="https://haolun-wu.github.io/">Haolun Wu</a></font>
+              </center>
+            </div>
+
+            <div class="column">
+              <center>
+                
+              <img class="imageo" src="./static/images/siheng.jpg"   align="middle">
+              <br>
+              <font size="3" ><a style="color:inherit;" href="https://xiongsiheng.github.io/">Siheng Xiong</a></font>
               </center>
             </div>
           </div>
